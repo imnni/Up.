@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长裕制衣厂 - 招聘信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('background_new.jpg'); /* 使用新的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .job-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .job-list li {
+            background-color: rgba(244, 244, 244, 0.9);
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .job-list li:hover {
+            background-color: rgba(226, 226, 226, 0.9);
+        }
+        .contact {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>长裕制衣厂</h1>
+        <h2>招聘信息</h2>
+    </header>
+    <div class="container">
+        <section>
+            <h2>公司简介</h2>
+            <p>长裕制衣厂是一家领先的服装制造公司，致力于提供高品质的产品和卓越的客户服务。我们拥有现代化的生产设备和一支专业的团队。</p>
+            <h3>老板简介</h3>
+            <p>庄老板，长裕制衣厂的创始人和领袖，带领公司冲进世界五百强企业，具有无限潜能。庄老板以其卓越的商业眼光和领导能力，赢得了行业内外的广泛尊重。他不仅致力于企业的发展，还积极推动行业的创新与进步。他坚信，只有不断创新和保持高标准的产品质量，才能在激烈的市场竞争中立于不败之地。在他的领导下，长裕制衣厂不断扩大市场份额，提升品牌影响力，成为行业中的翘楚。</p>
+        </section>
+        <section>
+            <h2>招聘职位</h2>
+            <ul class="job-list">
+                <li>
+                    <h3>职位名称：裁床工</h3>
+                    <p>部门：裁床部</p>
+                    <p>人数：6人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('裁床工')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：车间工</h3>
+                    <p>部门：车间</p>
+                    <p>人数：5人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('车间工')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：包装工</h3>
+                    <p>部门：包装部</p>
+                    <p>人数：8人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('包装工')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：主管</h3>
+                    <p>部门：各部门</p>
+                    <p>人数：3人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('主管')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：清洁工</h3>
+                    <p>部门：后勤部</p>
+                    <p>人数：2人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('清洁工')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：后台编辑</h3>
+                    <p>部门：后台编辑部</p>
+                    <p>人数：2人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('后台编辑')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：技术人员</h3>
+                    <p>部门：技术部</p>
+                    <p>人数：1人</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('技术人员')">查看详情</button>
+                </li>
+                <li>
+                    <h3>职位名称：门房</h3>
+                    <p>部门：安保部</p>
+                    <p>人数：2人</p>
+                    <p>要求：持枪</p>
+                    <p>工作地点：汕头市潮南区成田镇</p>
+                    <button onclick="showJobDetails('门房')">查看详情</button>
+                </li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>应聘方式</h2>
+            <p>请发送简历至邮箱：hr@changyu.com 或通过下面的在线申请表提交申请。</p>
+        </section>
+        <section class="contact">
+            <h2>联系方式</h2>
+            <p>地址：汕头市潮南区成田镇某某路123号</p>
+            <p>电话：021-12345678</p>
+            <p>邮箱：info@changyu.com</p>
+        </section>
+    </div>
+
+    <script>
+        function showJobDetails(jobTitle) {
+            alert('展示 ' + jobTitle + ' 的详细信息。');
+        }
+    </script>
+</body>
+</html>
